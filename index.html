@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Tomas Corral">
+
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./src/estilos.css">
+    <link rel="shortcut icon" href="./src/img/iconoClac.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Calculadora ATC_2022</h1>
+    <div class="caluladora_5">
+        <form name="caluladora" id="calculadora">
+            <input type="text" name="display" id="display">
+            <div>
+                <input type="button" id="uno" value="1" onclick="valor(document.getElementById('uno').value)">
+                <input type="button" id="dos" value="2" onclick="valor(document.getElementById('dos').value)">
+                <input type="button" id="tres" value="3" onclick="valor(document.getElementById('tres').value)">
+                <input type="button" id="suma" value="+" onclick="valor(document.getElementById('suma').value)">
+            </div>
+
+            <div>
+                <input type="button" id="cuatro" value="4" onclick="valor(document.getElementById('cuatro').value)">
+                <input type="button" id="cinco" value="5" onclick="valor(document.getElementById('cinco').value)">
+                <input type="button" id="seis" value="6" onclick="valor(document.getElementById('seis').value)">
+                <input type="button" id="resta" value="-" onclick="valor(document.getElementById('resta').value)">
+            </div>
+
+            <div>
+                <input type="button" id="siete" value="7" onclick="valor(document.getElementById('siete').value)">
+                <input type="button" id="ocho" value="8" onclick="valor(document.getElementById('ocho').value)">
+                <input type="button" id="nueve" value="9" onclick="valor(document.getElementById('nueve').value)">
+                <input type="button" id="mult" value="*" onclick="valor(document.getElementById('mult').value)">
+            </div>
+
+            <div>
+                <input type="button" id="cero" value="0" onclick="valor(document.getElementById('cero').value)">
+                <input type="button" id="decimal" value="." onclick="valor(document.getElementById('decimal').value)">
+                <input type="button" id="div" value="/" onclick="valor(document.getElementById('div').value)">
+                <input type="button" id="porc" value="%" onclick="valor(document.getElementById('porc').value)">
+            </div>
+
+            <div class="resultado">
+                <input type="button" id="borrar" value="borrar" onclick="borrardisplay(document.getElementById('borrar').value)">
+                <input type="button" id="igual" value="=" onclick="cal_resultado()">
+            </div>
+
+
+        </form>
+    </div>
+    <footer>
+        <h3>Creada por Angel Tomas Corral 2022 ©</h3>
+    </footer>
+    <script src="./src/cal1.js"></script>
+</body>
+
+</html>
